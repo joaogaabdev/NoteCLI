@@ -1,4 +1,4 @@
-# Notes-Terminal
+# NoteCLI
 
 # 🧠 Zettel Terminal — Knowledge System with Zettelkasten + MOCs
 
