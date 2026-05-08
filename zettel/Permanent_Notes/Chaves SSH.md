@@ -26,4 +26,4 @@ A chave SSH é uma forma de autenticação baseada em criptografia que substitui
     
 3. Quando você tentar se conectar, o servidor usa a **chave pública** para te desafiar com um "puzzle" criptográfico que **só a chave privada consegue resolver**.
 
-Chave privada - Jgabdev88035411
+Chave privada - SuachavePrivada123
