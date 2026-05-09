@@ -1,4 +1,0 @@
-## Wide Area Network
-
-abrange uma grande área geográfica, com fre quência um país ou continente. Vamos começar nossa dis cussão com as WANs conectadas por fios, usando o exem plo de uma empresa com filiais em diferentes cidades.
-A WAN na Figura 1.8 é uma rede que conecta escritórios em Perth, Melbourne e Brisbane. Cada um desses escritórios contém computadores que executam programas (ou seja, aplicações) do usuário. Seguiremos a tradição e chamaremos essas máquinas de hosts. O restante da rede que conecta esses hosts é chamada sub-rede comunicação ou, simplificando, apenas sub-rede. A tarefa da sub-rede é transportar mensagens de um host para outro, exatamente como o sistema de telefonia transporta as pala vras (na realidade, sons) do falante ao ouvinte.

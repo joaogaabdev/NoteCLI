@@ -1,2 +1,0 @@
-Referees: #Golang 
-Para identificar se algo é público ou privado, basta olhar a primeira letra, caso seja maiúscula, é público(exportável para outros pacotes), minúsculo significa que é privado à aquele pacote.

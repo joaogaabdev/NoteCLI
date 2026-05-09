@@ -1,1 +1,0 @@
-Virtual Private Network pode ser usada para unir redes individuais em diferentes locais e em uma rede estendida.

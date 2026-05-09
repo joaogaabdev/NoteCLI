@@ -1,1 +1,0 @@
-uma máquina que faz uma conexão entre duas ou mais redes e oferece a conversão necessária, tanto em termos de hardware quanto de software, é um gateway gateway. Os gateways são distinguidos pela camada em que operam na hierarquia de protocolos.

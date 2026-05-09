@@ -1,1 +1,0 @@
-Esse operador de sub-rede é chamado de provedor de serviço de Inter provedor de serviço de Inter Internet Perth Figura 1.9 Figura 1.9  WAN usando uma rede privada virtual. Enlace via Internet net net, ou ISP ISP (Internet Internet Service Provider uma rede ISP Service Provider), e a sub-rede é rede ISP. Seus clientes que se conectam à ISP rece bem serviço de Internet.
