@@ -1,0 +1,147 @@
+## Sistemas Binários — A Linguagem Fundamental dos Computadores
+
+O sistema binário é o alicerce de toda a tecnologia moderna. Para um desenvolvedor focado em sistemas de baixo nível e arquitetura de software, compreender a transição entre o sinal elétrico e a lógica de programação é fundamental.
+
+Abaixo, apresento sua nota reestruturada com formatação Markdown profissional, tabelas otimizadas e uma hierarquia lógica aprimorada.
+
+---
+
+# Sistemas Binários: A Linguagem Fundamental dos Computadores
+
+> "Todo software, imagem, vídeo, música e inteligência artificial eventualmente se reduz a padrões de bits."
+
+## 1. O Contexto Físico e Lógico
+
+O sistema binário é a ponte entre a matemática e a eletrônica. Computadores operam com base em **dois estados físicos estáveis**, o que garante robustez contra ruídos elétricos e simplicidade na implementação com transistores.
+
+* **Estados:** Ligado/Desligado | Alta tensão/Baixa tensão | Verdadeiro/Falso.
+* **Representação Numérica:** `1` e `0`.
+
+---
+
+## 2. Definições Básicas
+
+* **Bit (Binary Digit):** A menor unidade de informação. Pode assumir o valor 0 ou 1.
+* **Byte:** Um conjunto de **8 bits**. É a unidade padrão de armazenamento que pode representar 256 combinações diferentes ($2^8$).
+
+### Tabela de Potências de 2
+
+Essenciais para conversão rápida e cálculo de endereçamento de memória:
+
+| Potência | Valor | Potência | Valor |
+| --- | --- | --- | --- |
+| $2^0$ | 1 | $2^5$ | 32 |
+| $2^1$ | 2 | $2^6$ | 64 |
+| $2^2$ | 4 | $2^7$ | 128 |
+| $2^3$ | 8 | $2^8$ | 256 |
+| $2^4$ | 16 | $2^{10}$ | 1024 (1k) |
+
+---
+
+## 3. Conversão de Bases
+
+### Binário para Decimal
+
+Utiliza-se a soma das potências de 2 onde o bit é igual a 1.
+**Exemplo: $1011_2$**
+
+
+$$(1 \times 2^3) + (0 \times 2^2) + (1 \times 2^1) + (1 \times 2^0) \rightarrow 8 + 0 + 2 + 1 = 11_{10}$$
+
+### Decimal para Binário
+
+Utiliza-se o método das **divisões sucessivas por 2**, anotando os restos de baixo para cima.
+**Exemplo: 13 para binário**
+
+1. $13 \div 2 = 6$ (Resto **1**)
+2. $6 \div 2 = 3$ (Resto **0**)
+3. $3 \div 2 = 1$ (Resto **1**)
+4. $1 \div 2 = 0$ (Resto **1**)
+**Resultado:** $1101_2$
+
+---
+
+## 4. Representação de Inteiros e Negativos
+
+### Inteiros Sem Sinal (Unsigned)
+
+Representam apenas valores positivos.
+
+* **Faixa:** $0$ até $2^n - 1$ (onde $n$ é o número de bits).
+
+### Inteiros Com Sinal: Complemento de 2
+
+É o padrão moderno para representar números negativos, pois permite que a CPU utilize o mesmo circuito para soma e subtração.
+
+**Processo para representar -5 (em 8 bits):**
+
+1. **Representar +5:** `00000101`
+2. **Inverter os bits (NOT):** `11111010`
+3. **Somar 1:** `11111011`
+*Resultado: `11111011` representa -5.*
+
+---
+
+## 5. A Arquitetura do Computador
+
+A computação emerge através de camadas de abstração:
+
+1. **Transistor:** Funciona como um interruptor eletrônico rápido.
+2. **Portas Lógicas:** Operações booleanas (AND, OR, NOT, XOR).
+3. **Circuitos Digitais:** Somadores, Multiplexadores.
+4. **ULA (Unidade Lógica e Aritmética):** Onde os cálculos ocorrem.
+5. **CPU:** O cérebro que coordena as instruções.
+
+---
+
+## 6. O Sistema Hexadecimal (Base 16)
+
+Utilizado por programadores para facilitar a leitura de binários longos. Cada dígito hexadecimal representa **4 bits (um nibble)**.
+
+| Hex | Dec | Bin | Hex | Dec | Bin |
+| --- | --- | --- | --- | --- | --- |
+| **0-9** | 0-9 | - | **D** | 13 | 1101 |
+| **A** | 10 | 1010 | **E** | 14 | 1110 |
+| **B** | 11 | 1011 | **F** | 15 | 1111 |
+| **C** | 12 | 1100 |  |  |  |
+
+**Exemplo de compactação:**
+Binário: `1101 1110 1010 1101` $\rightarrow$ Hexadecimal: `DEAD`
+
+---
+
+## 7. Representação de Caracteres e Símbolos
+
+Como o computador não entende letras, ele utiliza tabelas de mapeamento:
+
+* **ASCII:** Mapeia 128 caracteres básicos (ex: 'A' = 65).
+* **Unicode (UTF-8):** Expansão global que permite emojis, diferentes alfabetos e símbolos técnicos. Tudo, no fim, é um índice binário.
+
+---
+
+## 8. Ponto Flutuante (Números Reais)
+
+Para representar números decimais (como 3.14), utiliza-se o padrão **IEEE 754**, que divide o espaço de bits em três campos:
+
+1. **Sinal:** Indica se é positivo ou negativo.
+2. **Expoente:** Determina a escala (a posição da vírgula).
+3. **Mantissa (Fração):** Armazena a precisão do número.
+
+---
+
+## 9. Limitações e Erros Comuns
+
+* **Overflow:** Quando o resultado de uma operação excede a capacidade de bits (ex: somar 1 ao valor máximo de um `unsigned byte` resulta em 0).
+* **Imprecisão de Ponto Flutuante:** Em binário, alguns números decimais são dízimas periódicas. Por isso, em muitas linguagens, `0.1 + 0.2 != 0.3`.
+* **Underflow:** Quando um número é tão pequeno que não pode ser representado com a precisão disponível.
+
+---
+
+## 10. Pipeline: Do Código à Eletricidade
+
+Caminho percorrido por uma instrução:
+**Código-fonte (Java/Go)** $\rightarrow$ **Compilador** $\rightarrow$ **Assembly** $\rightarrow$ **Código de Máquina** $\rightarrow$ **Sinais Elétricos nos Transistores.**
+
+### Resumo do Modelo Mental
+
+O binário não é a "vontade" do computador; é a representação simbólica de estados elétricos. O significado de um padrão de bits (se ele é uma letra, uma cor ou uma instrução de somar) é definido inteiramente pelo **contexto da instrução** que o processa.
